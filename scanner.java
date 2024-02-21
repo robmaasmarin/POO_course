@@ -7,9 +7,7 @@ public class scanner {
         Scanner myScanner = new Scanner(System.in);
         
         // Name
-        
-        
-		System.out.println("Enter your Name: ");
+       System.out.println("Enter your Name: ");
 		
 				
 		String name = myScanner.nextLine();
@@ -26,8 +24,11 @@ public class scanner {
         /*while (secondNumber <= firstNumber) {
             int resta = firstNumber - secondNumber;
             System.out.println("Resultado =  " + resta);
-
+                  
                }*/
+        
+        if (secondNumber > firstNumber) {
+        
         do {
             System.out.println("Sorry, invalid numbers. Please enter a new number: ");
             firstNumber = myScanner.nextInt();
@@ -35,8 +36,9 @@ public class scanner {
             secondNumber = myScanner.nextInt();
             continue;
             
-        } while (secondNumber> firstNumber);
-        
+        } while (secondNumber > firstNumber );
+        }
+                
         int resta = firstNumber - secondNumber;
         System.out.println("Resultado =  " + resta);
         myScanner.close();
