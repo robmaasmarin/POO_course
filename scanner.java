@@ -8,13 +8,28 @@ public class scanner {
         
         // Name
        System.out.println("Enter your Name: ");
-		
+       String name = myScanner.nextLine();
+       
+       // Evitar que el usuario introduzca números en el nombre
+       
+       if (!name.matches("[a-zA-Z_]+")) {
+			
+			do {
 				
-		String name = myScanner.nextLine();
+				System.out.println("Invalid name. Please, try again: ");
+				name = myScanner.nextLine();
+				
+			}
+			
+			while (!name.matches("[a-zA-Z_]+"));
+		    
+		}
+       
+       
 		
 		System.out.println("Hello " + name + "!");
         
-
+		
         System.out.println("Enter a number: ");
         int firstNumber = myScanner.nextInt();
         System.out.println("Enter another number: ");
