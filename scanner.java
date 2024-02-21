@@ -5,6 +5,17 @@ public class scanner {
         System.out.println("Welcome to this Java application");
 
         Scanner myScanner = new Scanner(System.in);
+        
+        // Name
+        
+        
+		System.out.println("Enter your Name: ");
+		
+				
+		String name = myScanner.nextLine();
+		
+		System.out.println("Hello " + name + "!");
+        
 
         System.out.println("Enter a number: ");
         int firstNumber = myScanner.nextInt();
