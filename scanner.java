@@ -10,26 +10,19 @@ public class scanner {
        System.out.println("Enter your Name: ");
        String name = myScanner.nextLine();
        
-       // Evitar que el usuario introduzca números en el nombre
-       
+       	// Evitar que el usuario introduzca números en el nombre
        if (!name.matches("[a-zA-Z_]+")) {
-			
+    	// si introduce algún carácter no aceptado vuelve a pedir el nombre	
 			do {
-				
 				System.out.println("Invalid name. Please, try again: ");
 				name = myScanner.nextLine();
-				
-			}
-			
-			while (!name.matches("[a-zA-Z_]+"));
-		    
-		}
-       
-       
-		
+						}
+		while (!name.matches("[a-zA-Z_]+"));
+		  }
+              		
 		System.out.println("Hello " + name + "!");
         
-		
+		//Pedimos 2 números para hacer posteriormente la resta 
         System.out.println("Enter a number: ");
         int firstNumber = myScanner.nextInt();
         System.out.println("Enter another number: ");
@@ -41,7 +34,7 @@ public class scanner {
             System.out.println("Resultado =  " + resta);
                   
                }*/
-        
+        // en caso de que el segundo valor sea superior al primero solicitamos de nuevo los números 
         if (secondNumber > firstNumber) {
         
         do {
@@ -55,7 +48,7 @@ public class scanner {
         }
                 
         int resta = firstNumber - secondNumber;
-        System.out.println("Resultado =  " + resta);
+        System.out.println("Result =  " + resta);
         myScanner.close();
     }
 }
