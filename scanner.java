@@ -50,5 +50,6 @@ public class scanner {
         int resta = firstNumber - secondNumber;
         System.out.println("Result =  " + resta);
         myScanner.close();
+        //test
     }
 }
