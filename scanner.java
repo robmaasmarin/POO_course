@@ -24,10 +24,40 @@ public class scanner {
         
 		//Pedimos 2 números para hacer posteriormente la resta 
         System.out.println("Enter a number: ");
-        int firstNumber = myScanner.nextInt();
+        int firstNumber;
+        //No permitir ingresar letras o símbolos en lugar de números
+        do {
+            if (myScanner.hasNextInt()) {
+				firstNumber = myScanner.nextInt();
+				
+				break;
+				}
+		
+			else {
+				myScanner.next();
+				System.out.println("Invalid format. Try again: ");
+				
+			}
+        } while(true);
+
+
         System.out.println("Enter another number: ");
 
-        int secondNumber = myScanner.nextInt();
+        int secondNumber;
+
+        do {
+            if (myScanner.hasNextInt()) {
+				secondNumber = myScanner.nextInt();
+				
+				break;
+				}
+		
+			else {
+				myScanner.next();
+				System.out.println("Invalid format. Try again: ");
+				
+			}
+        } while(true);
       
       
         // en caso de que el segundo valor sea superior al primero solicitamos de nuevo los números 
