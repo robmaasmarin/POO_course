@@ -28,12 +28,8 @@ public class scanner {
         System.out.println("Enter another number: ");
 
         int secondNumber = myScanner.nextInt();
-
-        /*while (secondNumber <= firstNumber) {
-            int resta = firstNumber - secondNumber;
-            System.out.println("Resultado =  " + resta);
-                  
-               }*/
+      
+      
         // en caso de que el segundo valor sea superior al primero solicitamos de nuevo los números 
         if (secondNumber > firstNumber) {
         
@@ -48,7 +44,9 @@ public class scanner {
         }
                 
         int resta = firstNumber - secondNumber;
+        
         System.out.println("Result =  " + resta);
+        //System.out.println(secondNumber.getClass().getSimpleName();
         myScanner.close();
         //test
     }
