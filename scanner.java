@@ -44,6 +44,7 @@ public class scanner {
         System.out.println("Enter another number: ");
 
         int secondNumber;
+        //No permitir ingresar letras o símbolos en lugar de números
 
         do {
             if (myScanner.hasNextInt()) {
